@@ -1,4 +1,6 @@
-# DevDisk
+<p align="center"><img src="assets/icon_1024.png" width="128" alt="DevDisk icon"></p>
+
+<h1 align="center">DevDisk</h1>
 
 [![ci](https://github.com/entange/dev-disk/actions/workflows/ci.yml/badge.svg)](https://github.com/entange/dev-disk/actions/workflows/ci.yml)
 [![release](https://img.shields.io/github/v/release/entange/dev-disk)](https://github.com/entange/dev-disk/releases/latest)
