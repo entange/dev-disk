@@ -1,0 +1,24 @@
+[package]
+name = "devdisk"
+version = "0.1.0"
+edition = "2024"
+description = "Fast macOS disk space lens with safe dev-cache cleanup"
+
+[[bin]]
+name = "devdisk"
+path = "src/main.rs"
+
+[dependencies]
+gpui = "0.2.2"
+rayon = "1.12"
+libc = "0.2"
+parking_lot = "0.12"
+objc2 = "0.6"
+objc2-foundation = { version = "0.3", features = ["NSFileManager", "NSURL", "NSString", "NSError"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 4
+debug = false
+strip = true
